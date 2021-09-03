@@ -3,12 +3,12 @@ import { createRouter, createWebHistory } from 'vue-router';
 import CoacheDetail from './pages/coaches/CoacheDetail.vue';
 import CoachesList from './pages/coaches/CoachesList.vue';
 import CoachRegistration from './pages/coaches/CoachRegistration.vue';
-import ContactCoach from './pages/requests/CoachRegistration.vue';
-import RequestReceived from './pages/requests/CoachRegistration.vue';
+import ContactCoach from './pages/requests/ContactCoach.vue';
+import RequestReceived from './pages/requests/RequestReceived.vue';
 import NotFound from './pages/NotFound.vue';
 
 const router = createRouter({
-  history: createWebHistory,
+  history: createWebHistory(),
   routes: [
     { path: '/', redirect: '/coaches' },
     { path: '/coaches', component: CoachesList },
