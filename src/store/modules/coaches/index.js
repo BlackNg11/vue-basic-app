@@ -13,7 +13,7 @@ export default {
           lastName: 'Ng',
           areas: ['frontend', 'backend', 'career'],
           description: 'Hello World',
-          hourlyRate: 30
+          hourlyRate: '$30'
         },
         {
           id: 'c2',
@@ -22,7 +22,7 @@ export default {
           areas: ['frontend', 'career'],
           description:
             'I am Julie and as a senior developer in a big tech company, I can help you get your first job or progress in your current role.',
-          hourlyRate: 30
+          hourlyRate: '$30'
         }
       ]
     };
