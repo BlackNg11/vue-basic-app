@@ -9,6 +9,9 @@ export default {
     const coaches = getters.coaches;
     const userId = rootGetters.userId;
 
-    return coaches.some(coach => coach.id === userId);
+    const isSomeCoach =
+      coaches.length > 0 && coaches.some(coach => coach.id === userId);
+
+    return isSomeCoach;
   }
 };
