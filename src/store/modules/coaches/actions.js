@@ -28,7 +28,10 @@ export default {
       id: userId
     });
   },
-  async loadCoaches(context) {
+  async loadCoaches(context, payload) {
+    if (!payload.forceRefresh && !context.getters.shouldUpdate) {
+      return;
+    }
     const response = await fetch(
       `https://vue-demo-21ab3-default-rtdb.asia-southeast1.firebasedatabase.app/coaches.json`
     );
